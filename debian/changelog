@@ -1,0 +1,81 @@
+trivial-features (20210228.gitf6e8dd7-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+  [ Sébastien Villemot ]
+  * New upstream snapshot
+  * Update standards version to 4.6.0, no changes needed.
+  * Add more fields to debian/upstream/metadata
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 12 Nov 2021 15:59:19 +0100
+
+trivial-features (20200702.gite7bb968-1) unstable; urgency=medium
+
+  * New upstream snapshot
+  * Disable clisp autopkgtest on i386, it is not reliable there
+  * Bump to debhelper 13
+  * Bump to S-V 4.5.1
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 11 Dec 2020 14:13:52 +0100
+
+trivial-features (20200115.git9d1d659-1) unstable; urgency=medium
+
+  * New upstream snapshot
+  * Bump to S-V 4.5.0
+
+ -- Sébastien Villemot <sebastien@debian.org>  Sun, 26 Jan 2020 19:13:35 +0100
+
+trivial-features (20161107.git29ab1da-2) unstable; urgency=medium
+
+  * Actually fail autopkgtest on test failures.
+  * Bump to debhelper compat level 12
+  * Add Rules-Requires-Root: no
+  * Bump to S-V 4.3.0
+
+ -- Sébastien Villemot <sebastien@debian.org>  Sun, 03 Feb 2019 11:40:32 +0100
+
+trivial-features (20161107.git29ab1da-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Mark as M-A foreign.
+  * Ship README.md and SPEC.md.
+  * Bump to debhelper compat level 11.
+  * Rewrite d/rules using dh.
+  * Bump to S-V 4.1.4.
+  * Add myself to Uploaders.
+  * Update package description.
+  * Add Recommends on cl-rt, cl-cffi, cl-alexandria (for the testsuite).
+  * Rewrite d/copyright using machine-readable format 1.0.
+  * Add an autopkgtest that runs the testsuite on sbcl, ecl and clisp.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 27 Apr 2018 11:19:31 +0200
+
+trivial-features (0.6-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update Vcs-* fields for move to salsa.
+  * Remove ${shlibs:Depends}, this is an arch:all package.
+  * Set Maintainer to debian-common-lisp@l.d.o.
+  * Move to 3.0 (quilt) source format.
+  * Remove Build-Depends on dh-lisp.
+  * Remove obsolete README.Debian.
+  * Use secure URL for Homepage.
+  * Update d/watch using uscan git HEAD mode.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 13 Apr 2018 23:27:33 +0200
+
+trivial-features (0.6-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Don't install non-existent files (Closes: #821786).
+  * Add explicit debian/source/format.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sat, 26 Nov 2016 17:00:45 +0500
+
+trivial-features (0.6-1) unstable; urgency=low
+
+  * First packaged.
+  * Added dummy watch file
+
+ -- Peter Van Eynde <pvaneynd@debian.org>  Sat, 07 Nov 2009 14:25:09 +0100

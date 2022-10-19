@@ -1,0 +1,12 @@
+Test-Command: sbcl --script debian/tests/runtests.lisp
+Depends: @, sbcl, cl-rt, cl-cffi, cl-alexandria
+Restrictions: allow-stderr
+
+Test-Command: ecl -norc -shell debian/tests/runtests.lisp
+Depends: @, ecl, cl-rt, cl-cffi, cl-alexandria
+Restrictions: allow-stderr
+
+Test-Command: clisp -norc debian/tests/runtests.lisp
+Depends: @, clisp, cl-rt, cl-cffi, cl-alexandria
+Restrictions: allow-stderr
+Architecture: !i386
